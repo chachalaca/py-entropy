@@ -1,7 +1,10 @@
 import entropy._entropy as _entropy
 
 def entropy(data):
-	"""Compute the Shannon entropy of the given string."""
+	"""Compute the Shannon entropy of the given string.
+
+	Returns a floating point value indicating how many bits of entropy
+	there are per octet in the string."""
 	return _entropy.shannon_entropy(data)
 
 if __name__ == '__main__':
