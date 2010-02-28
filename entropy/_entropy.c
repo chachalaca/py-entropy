@@ -38,7 +38,7 @@ static PyObject *shannon_entropy(PyObject *self, PyObject *args) {
 	for (i = 0; i < N_SYMBOLS; i++) {
 		if (alphabet[i]) {
 			relfreq = (double) alphabet[i] / (double) buflen;
-			entropy += -relfreq * log2(relfreq);
+			entropy += -relfreq * logb(relfreq);
 		}
 	}
 
